@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    .display-6{
+        padding-top: 80px;
+    }
+    .row{
+        width: 100%;
+    }
+    .card{
+        margin: 10px;
+        color: black;
+    }
+    #kj{
+        width: 100px;
+    }
+</style>
+<body>
+        <div class="row">
+          <div class="col align-self-start">
+            
+          </div>
+          <div class="col align-self-center">
+            <h1 class="display-6">Weight Converter</h1>
+            <br>
+             <div class="input-group mb-3" >
+            <input type="text" id="input" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">kg</span>
+            </div>
+            <br>
+            <center>
+                <button type="button" class="btn btn-outline-secondary" id="kj" onclick="convert()">Convert</button>
+            </center>
+            <br><br>
+                <div class="card" >
+                    <div class="card-body">
+                      POUNDS: <span id="p1"> </span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-body">
+                      OUNCES: <span id="o1"> </span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <div class="card-body">
+                      GRAMS: <span id="g1"> </span>
+                    </div>
+                     </div>
+          </div>
+          <div class="col align-self-end">
+            
+          </div>
+        </div>
+      </div>
+   <script src="scriptConverter.js"></script>
+</body>
+</html>
